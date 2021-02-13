@@ -1,0 +1,25 @@
+body{
+    width: 1000px;
+    height: 90vh;
+    margin: 0px auto;
+}
+
+.titulos{
+    color: #008de1;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.parrafos{
+    font-size: 17px;
+    color: #6c6c6c;
+}
+
+#principal{
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: white;
+}
