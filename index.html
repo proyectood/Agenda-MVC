@@ -12,13 +12,14 @@
     <title>Agenda de contactos</title>
   </head>
   <body>
-      
+    <!-- Contenedor global -->  
     <div id="principal" class="container mt-3">
+      <!-- Contenedor del menu -->
       <div id="cabecera" class="container col-md-12">
         <div class="row">
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#" onclick="peticion('vistaInicio')">
                     <img src="./recursos/imagenes/notebook.png" alt="A" width="30" height="30" class="d-inline-block align-top">
                     Agenda
                 </a>
@@ -28,7 +29,7 @@
                         <a class="nav-link" href="#" onclick="peticion('vistaVerTodos','verTodos')">Ver Todos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Detalle Contacto</a>
+                        <a class="nav-link" href="#" onclick="peticion('vistaVerUno')">Detalle Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,8 +37,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#" onclick="peticion('vistaAgregar')">Agregar</a></li>
-                            <li><a class="dropdown-item" href="#">Editar</a></li>
-                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="peticion('vistaEditar')">Editar</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="peticion('vistaEliminar')">Eliminar</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -46,6 +47,7 @@
           </nav>
         </div>
       </div>
+      <!-- Contenedor de las vistas -->
       <div id="contenido" class="container col-md-12">
         <div class="row"></div>
       </div>
@@ -57,7 +59,7 @@
     <script src="./recursos/js/jquery-3.5.1.js"></script>
     <!-- Funciones JS -->
     <script src="./recursos/js/funciones.js"></script>
-        <!-- Sweet Alert 2 -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.all.min.js"></script>
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

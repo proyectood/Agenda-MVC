@@ -1,4 +1,5 @@
 <?php
+// Template que al ser solicitado genera la vista
 $templateAgregar = '
 <form class="row g-3">
   <div class="col-md-6">

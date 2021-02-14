@@ -1,6 +1,7 @@
 <?php
+// Template que al ser solicitado genera la vista
 $templateVerTodos = '
-<table class="table table-dark table-hover">
+<table class="table table-light table-hover">
 <thead>
 <tr>
   <th scope="col">Nombre completo</th>
